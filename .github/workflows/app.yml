@@ -2,7 +2,7 @@ name: run gcloud
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish
