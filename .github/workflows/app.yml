@@ -20,7 +20,7 @@ jobs:
     
     # Configure Docker with Credentials
     #- name: run command 
-     # run: |
+    # # run: |
      #   gcloud config set project ${{ secrets.GCP_PROJECT }}
         
       
