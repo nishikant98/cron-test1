@@ -1,9 +1,9 @@
 name: Scheduled Job
 
 on:
-push:
+ push:
     branches: [ master ]
-  schedule:
+ schedule:
     - cron: '*/5 * * * *'
 
 jobs:
