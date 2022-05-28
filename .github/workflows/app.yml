@@ -31,4 +31,6 @@ jobs:
       run: |
         gcloud config set project ${{ secrets.GCP_PROJECT }}
         gcloud app versions start --service=flex-app new12
+        gcloud app versions start --service=defaul new12
+        gcloud app versions start --service=default new1
       
