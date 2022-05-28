@@ -3,10 +3,8 @@ on:
   push:
     branches:
       - master
-  #  schedule:
-  #  - cron: '26 4 * * *'
 jobs:
-  setup-build-publish-deploy:Cron jobs on github actions are triggered according to UTC time
+  setup-build-publish-deploy:
     name: Setup, Build, Publish
     runs-on: ubuntu-latest
     steps:
@@ -32,7 +30,6 @@ jobs:
     - name: Build & Publish
       run: |
         gcloud config set project ${{ secrets.GCP_PROJECT }}
-        gcloud app versions start --service=flex-app new12
-       # gcloud app versions start --service=default new12
-       # gcloud app versions start --service=default new1
-      
+      #  gcloud app versions start --service=flex-app new12
+      #  gcloud app versions start --service=default new12
+      #  gcloud app versions start --service=default new1
