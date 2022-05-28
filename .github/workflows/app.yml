@@ -2,7 +2,7 @@ name: run gcloud
 on:
   push:
     branches:
-     - master
+      - master
   #  schedule:
   #  - cron: '26 4 * * *'
 jobs:
