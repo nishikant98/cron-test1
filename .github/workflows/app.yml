@@ -2,8 +2,8 @@ name: run gcloud
 on:
   push:
     branches:
-      - master
-  schedule:
+     - master
+    schedule:
      - cron: '26 4 * * *'
 jobs:
   setup-build-publish-deploy:Cron jobs on github actions are triggered according to UTC time
